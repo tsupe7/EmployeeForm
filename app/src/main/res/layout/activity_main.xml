@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dimen_20"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/SectionLayout"
+            >
+            <com.tushar.employeeform.view.CustomEditText
+                android:id="@+id/et_school_name"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_20"
+                app:hint="@string/school_name"
+                android:imeOptions="actionNext"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toTopOf="parent"
+                app:mandatory="true"
+                app:title="@string/school_Name" />
+
+            <com.tushar.employeeform.view.CustomEditText
+                android:id="@+id/et_degree"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                app:hint="@string/degree"
+                android:imeOptions="actionNext"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/et_school_name"
+                app:mandatory="true"
+                app:title="@string/degree" />
+
+            <com.tushar.employeeform.view.CustomEditText
+                android:id="@+id/et_fields_of_study"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                app:hint="@string/fields_of_study"
+                android:imeOptions="actionDone"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/et_degree"
+                app:mandatory="true"
+                app:title="@string/fields_of_Study" />
+
+
+            <com.tushar.employeeform.view.CustomEditText
+                android:id="@+id/et_from_date"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                app:hint="@string/select"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/et_fields_of_study"
+                app:rightImage="@drawable/ic_calendar"
+                app:title="@string/from" />
+
+            <com.tushar.employeeform.view.CustomEditText
+                android:id="@+id/et_to_date"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                app:hint="@string/select"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/et_from_date"
+                app:rightImage="@drawable/ic_calendar"
+                app:title="@string/to" />
+
+            <com.tushar.employeeform.view.CustomEditTextMultiLine
+                android:id="@+id/et_details"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                app:hint="@string/details"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/et_to_date"
+                app:maxLength="121"
+                app:title="@string/details" />
+
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="@dimen/dimen_2"
+                android:background="@color/black_opacity_8"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="@dimen/dimen_40"
+                app:layout_constraintEnd_toStartOf="@+id/tv_delete"
+                app:layout_constraintTop_toTopOf="@+id/tv_delete"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_delete"
+                />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:gravity="center"
+                android:text="@string/detele"
+                android:textColor="@color/cinnabar"
+                android:padding="@dimen/dimen_16"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/et_details"
+                />
+
+            <View
+                android:id="@+id/view_diveder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10"
+                android:background="@color/black_opacity_8"
+                app:layout_constraintTop_toBottomOf="@+id/tv_delete"
+                />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/dimen_20" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/dimen_20" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_view"
+        style="@style/SectionLayout"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Save"
+            style="@style/purpleButton"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_marginHorizontal="@dimen/dimen_12"
+            android:layout_marginVertical="@dimen/dimen_20"
+            android:enabled="false"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

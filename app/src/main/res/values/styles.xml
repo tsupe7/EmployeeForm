@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text style for usage in text with medium font size = 12 and line height = 15 -->
+    <style name="text_medium_16_21" parent="WrapContentLayout">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_7</item>
+    </style>
+
+    <style name="input_field" parent="text_medium_16_21">
+        <item name="android:background">@drawable/input_field_normal_bg</item>
+        <item name="android:layout_height">@dimen/dimen_48</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/dimen_24</item>
+        <item name="android:paddingEnd">@dimen/dimen_40</item>
+        <item name="android:textColor">@color/black_three</item>
+        <item name="android:textColorHint">@color/warm_grey_two</item>
+    </style>
+
+    <!-- Text style for usage in text with regular font size = 12 and line height = 21 -->
+    <style name="text_regular_12_21" parent="WrapContentLayout">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_8</item>
+    </style>
+
+    <!-- Text style for usage in text with regular font size = 14 and line height = 21 -->
+    <style name="text_regular_14_21" parent="WrapContentLayout">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_7</item>
+    </style>
+
+    <style name="multi_line" parent="text_medium_16_21">
+        <item name="android:background">@drawable/input_field_normal_bg</item>
+        <item name="android:gravity">start|top</item>
+        <item name="android:lines">5</item>
+        <item name="android:minLines">5</item>
+        <item name="android:layout_height">@dimen/dimen_104</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingStart">@dimen/dimen_24</item>
+        <item name="android:paddingTop">@dimen/dimen_16</item>
+        <item name="android:paddingBottom">@dimen/dimen_16</item>
+        <item name="android:paddingEnd">@dimen/dimen_40</item>
+        <item name="android:textColor">@color/black_three</item>
+        <item name="android:textColorHint">@color/warm_grey_two</item>
+    </style>
+
+    <style name="text_medium_24_25_toolbar" parent="WrapContentLayout">
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="purpleButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/purple_button_bg_selector</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_height">@dimen/dimen_48</item>
+    </style>
+
+    <!-- Text style for usage in text with regular font size = 10 and line height = 20 -->
+    <style name="text_regular_10_20" parent="WrapContentLayout">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_10</item>
+    </style>
+
+    <!-- Theme.AppCompat.Light is not a dialog theme -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/cinnabar</item>
+    </style>
+
+</resources>

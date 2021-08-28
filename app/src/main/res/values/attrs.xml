@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEditText">
+        <attr name="title" format="string" />
+        <attr name="mandatory" format="boolean" />
+        <attr name="text" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="android:imeOptions" />
+        <attr name="android:inputType" />
+        <attr name="leftImage" format="reference" />
+        <attr name="rightImage" format="reference" />
+        <attr name="maxLength" format="integer" />
+        <attr name="layoutEnabled" format="boolean" />
+        <attr name="lines" format="integer" />
+        <attr name="showCounter" format="boolean" />
+        <attr name="android:digits" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditTextMultiLine">
+        <attr name="title" />
+        <attr name="text" />
+        <attr name="hint" />
+        <attr name="android:imeOptions" />
+        <attr name="android:inputType" />
+        <attr name="leftImage" />
+        <attr name="rightImage" />
+        <attr name="maxLength" />
+        <attr name="layoutEnabled" />
+        <attr name="lines" />
+        <attr name="showCounter" />
+        <attr name="android:digits" />
+    </declare-styleable>
+</resources>

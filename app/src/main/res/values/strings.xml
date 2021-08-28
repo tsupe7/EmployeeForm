@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EmployeeForm</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="edit_education">Edit Education</string>
+    <string name="save">save</string>
+    <string name="enter_school_Name">Enter School Name</string>
+    <string name="school_Name">School Name</string>
+    <string name="school_name">School name</string>
+    <string name="degree">Degree</string>
+    <string name="enter_degree">Enter Degree</string>
+    <string name="fields_of_Study">Fields of Study</string>
+    <string name="fields_of_study">Fields of study</string>
+    <string name="enter_fields_of_study">Enter Fields of Study</string>
+    <string name="from">From</string>
+    <string name="select">select</string>
+    <string name="to">To</string>
+    <string name="details">Details</string>
+    <string name="detele">Detele</string>
+    <string name="save_employee_details">Saving Employee Details</string>
+</resources>
